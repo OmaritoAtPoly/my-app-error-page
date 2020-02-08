@@ -7,13 +7,15 @@ const All = () => {
         const stylos = useStyles();
 
         return (
+
                 <div className={stylos.fondo}>
-                        <div >
-
-                                <Bici  className={stylos.bici}/>
+                        <div className={stylos.bicii}>
+                                <Bici />
                                 <p>Error</p>
-
                         </div>
+
+
+
                 </div >)
 
 }
@@ -25,9 +27,15 @@ export default All
 const useStyles = makeStyles({
         bici: {
                 display: 'flex',
-                position:"relative",
-                paddingTop:"7%",
-                marginLe:"5%"
+                paddingTop: "7%",
+                alignContent: "center",
+                border: "1px solid #555",
+                justifyContent: "space-between",
+                // alignItems: "center"
+                position: "absolute",
+
+                // marginLeft: "5%",
+
                 // alignItems:"baseline"
                 // marginLeft: '5%',
                 // alignContent:'stretch',
@@ -36,20 +44,14 @@ const useStyles = makeStyles({
         fondo: {
                 backgroundImage: "url(http://localhost/img/fondo.png)",
                 display: 'flex',
-                width: '99%',
-                height:'100%',
-                // paddingLeft:"1%",
-                // paddingTop:"3%",
+                width: '100%',
+                height: '100%',
+                // justifyContent: 'center',
                 backgroundRepeat: 'no-repeat',
-                position: 'absolute',
-                
-                // // paddingTop: '10%',
-                // // paddingBottom:'10%',
-                // // paddingLeft:'2%',
-                
-                // // alignItems:'flexStart'
-
-
+                position: 'relative',
+                paddingLeft: "3%",
+                paddingTop: "9%",
+                // alignContent: "center",
         },
         price: {
                 marginRight: '2rem'
