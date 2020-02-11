@@ -7,6 +7,7 @@ const ErrorBox = ({ label, apologize, forbidden }) => {
         const stylos = useStyles();
         return (
                 <div className={stylos.centrando}>
+
                         <Typography className={stylos.errorText} color="textSecondary" variant="h1" component="h2">
                                 {label}
                         </Typography>
@@ -23,7 +24,6 @@ const ErrorBox = ({ label, apologize, forbidden }) => {
                                 <Button variant="outlined" color="secondary">Quit</Button>
                                 <Button variant="outlined" color="secondary">Try again</Button>
                         </div>
-
                 </div>
 
         )
@@ -31,20 +31,21 @@ const ErrorBox = ({ label, apologize, forbidden }) => {
 }
 
 const useStyles = makeStyles({
-        centrando: {
+        centrando: {  /// bien hasta ahora falta el mov de los botones por abajo
                 display: 'flex',
-                width: '150%',
-                height: '100%',
+                width: '100%',
+                // height: '50%',
                 flexDirection: 'column',
-                justifyContent: 'flex-start',
-                alignItems: 'flext-start',
+                // justifyContent: 'center',
+                alignItems: 'flex-start',
                 // border: '1px solid blue',
+                // marginLeft: "10%"
 
         }, errorText: {
                 display: 'flex',
                 marginTop: '12%',
                 marginBottom: "7%",
-                paddingLeft:"25%"
+                paddingLeft: "25%"
                 // fontSize: '110px',
                 // paddingtop: '10px',
                 // alignItems:'flex-end',
@@ -53,12 +54,13 @@ const useStyles = makeStyles({
         apologizeText: {
                 display: 'flex',
                 marginBottom: "2%",
-                paddingLeft:"26%"
+                paddingLeft: "26%"
         },
         forbiddenText: {
                 display: 'flex',
                 // fontSize: '2rem',
-                marginBottom: "7%", 
+                marginTop: '5%',
+                marginBottom: "7%",
                 paddingRight: "10%",
 
         }, buttons: {
@@ -66,9 +68,11 @@ const useStyles = makeStyles({
                 // backgroundColor: '#FF0000',
                 // backgroundColor: 'white',
                 justifyContent: "space-around",
-                // border: '1px solid yellow',
-                width: "50%",
-                paddingLeft:"10%",
+                border: '1px solid yellow',
+                width: "70%",
+                paddingLeft: "15%",
+                marginTop: "15%",
+                // paddingBottom: '5%'
         }
 })
 

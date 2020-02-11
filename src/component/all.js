@@ -12,11 +12,14 @@ const All = () => {
                         <span className={stylos.centrando}>
                                 <Bici className={stylos.bici} />
                         </span>
-                        <ErrorBox
-                                label="Error"
-                                apologize="i'm sorry "
-                                forbidden="you can't use this resource or it does't exists"
-                        />
+                        <span className={stylos.errorBox}>
+                                <ErrorBox
+                                        label="Error"
+                                        apologize="i'm sorry "
+                                        forbidden="you can't use this resource or it does't exists"
+                                />
+                        </span>
+
                 </span >);
 }
 
@@ -25,8 +28,23 @@ const All = () => {
 export default All
 
 const useStyles = makeStyles({
+        errorBox: {//aki  esta  buenoo
+                display: 'flex',
+                // justifyContent: 'space-around',
+                width: "50%",
+                // height: "20%",
+                // position: 'absolute',
+                // position: 'absolute'
+                // paddingTop: "25%",
+                // marginLeft: "1%",
+                // border: '1px solid red',
+        },
         centrando: {
                 display: 'flex',
+                // justifyContent
+                // position: 'fixed',
+                // paddingTop: "25%",
+                // marginLeft: "5%",
         },
         bici: {
                 display: 'flex',
@@ -38,6 +56,8 @@ const useStyles = makeStyles({
                 display: 'flex',
                 backgroundImage: "url(http://localhost/img/fondo.png)",
                 backgroundRepeat: 'no-repeat',
+                width: '100%'
+                // position: "relative"
         }
 });
 
