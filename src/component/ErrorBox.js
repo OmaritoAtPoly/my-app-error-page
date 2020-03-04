@@ -17,9 +17,7 @@ const ErrorBox = ({ label, apologize, forbidden }) => {
                         <Typography className={stylos.forbiddenText} color="textSecondary" align="center" variant="h4" component="h1">
                                 {forbidden}
                         </Typography>
-                        {/* <div className={stylos.errorText}>{label}</div> */}
-                        {/* <div className={stylos.apologizeText}>{apologize}</div> */}
-                        {/* <div className={stylos.forbiddenText}>{forbidden}</div> */}
+
                         <div className={stylos.buttons}>
                                 <Button variant="outlined" color="secondary">Quit</Button>
                                 <Button variant="outlined" color="secondary">Try again</Button>
@@ -34,22 +32,14 @@ const useStyles = makeStyles({
         centrando: {  /// bien hasta ahora falta el mov de los botones por abajo
                 display: 'flex',
                 width: '100%',
-                // height: '50%',
                 flexDirection: 'column',
-                // justifyContent: 'center',
                 alignItems: 'flex-start',
-                // border: '1px solid blue',
-                // marginLeft: "10%"
 
         }, errorText: {
                 display: 'flex',
                 marginTop: '12%',
                 marginBottom: "7%",
                 paddingLeft: "25%"
-                // fontSize: '110px',
-                // paddingtop: '10px',
-                // alignItems:'flex-end',
-                // paddingLeft:"1%"
         },
         apologizeText: {
                 display: 'flex',
@@ -58,21 +48,16 @@ const useStyles = makeStyles({
         },
         forbiddenText: {
                 display: 'flex',
-                // fontSize: '2rem',
                 marginTop: '5%',
                 marginBottom: "7%",
                 paddingRight: "10%",
 
         }, buttons: {
                 display: 'flex',
-                // backgroundColor: '#FF0000',
-                // backgroundColor: 'white',
                 justifyContent: "space-around",
-                border: '1px solid yellow',
                 width: "70%",
                 paddingLeft: "15%",
                 marginTop: "15%",
-                // paddingBottom: '5%'
         }
 })
 
