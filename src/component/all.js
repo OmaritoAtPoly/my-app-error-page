@@ -8,19 +8,19 @@ const All = () => {
         const stylos = useStyles();
 
         return (
-                <span className={stylos.fondo}>
-                        <span className={stylos.centrando}>
+                <div className={stylos.fondo}>
+                        <div className={stylos.centrando}>
                                 <Bici className={stylos.bici} />
-                        </span>
-                        <span className={stylos.errorBox}>
+                        </div>
+                        <div className={stylos.errorBox}>
                                 <ErrorBox
                                         label="Error"
                                         apologize="i'm sorry "
                                         forbidden="you can't use this resource or it does't exists"
                                 />
-                        </span>
+                        </div>
 
-                </span >);
+                </div >);
 }
 
 
@@ -31,7 +31,7 @@ const useStyles = makeStyles({
         errorBox: {//aki  esta  buenoo
                 display: 'flex',
                 // justifyContent: 'space-around',
-                width: "50%",
+                // width: "50%",
                 // height: "20%",
                 // position: 'absolute',
                 // position: 'absolute'
